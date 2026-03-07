@@ -1,3 +1,5 @@
+package castilloCayetano;
+
 class Tablero {
 
     private char[][] casillas;
@@ -63,6 +65,10 @@ class Tablero {
 
     public boolean estaOcupado(Coordenada coordenada) {
         return casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1] != '_';
+    }
+    
+    public char obtenerColor(Coordenada coordenada) {
+        return casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1];
     }
 
     public void ponerFicha(Coordenada coordenada, char color) {

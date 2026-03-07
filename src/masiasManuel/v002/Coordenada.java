@@ -1,3 +1,4 @@
+package v002;
 
 import java.util.Scanner;
 
@@ -5,6 +6,15 @@ public class Coordenada {
 
     private int fila;
     private int columna;
+
+    public Coordenada(int fila, int columna) {
+        this.fila = fila;
+        this.columna = columna;
+        assert this.esValida();
+    }
+
+    public Coordenada() {
+    }
 
     public void pedir() {
         do {
@@ -26,5 +36,9 @@ public class Coordenada {
     public int getColumna() {
         return columna;
     }
+
+    public boolean igual(Coordenada coordenada) {
+        return this.fila == coordenada.fila && this.columna == coordenada.columna;
+    }    
 
 }

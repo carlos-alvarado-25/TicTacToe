@@ -137,4 +137,3 @@ Recapitulamos, vemos la última clase pendiente y empezamos:
   - [x] Codificamos el método que indica si los datos pertenecen a una coordenada válida
   - [x] Codificamos el método que devuelven la fila
   - [x] Codificamos el método que devuelven la columna
-
