@@ -1,15 +1,22 @@
 package alvaradoCarlos;
 
-public class Turno {
+class Turno {
+
+    private int valor;
+
+    public Turno() {
+        valor = (int) (Math.random() * 2);
+    }
 
     public int leToca() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'leToca'");
+        return valor;
     }
 
     public void cambiar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'cambiar'");
+        valor = (valor + 1) % 2;
     }
 
+    public int noLeToca() {
+        return (valor + 1) % 2;
+    }
 }
